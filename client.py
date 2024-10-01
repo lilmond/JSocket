@@ -76,4 +76,7 @@ def main():
         client.send_message(message_json)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        exit()
